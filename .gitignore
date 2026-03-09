@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# Environment Variables
+.env
+backend/.env
+frontend/.env
+frontend/.env.local
+
+# Project Specific
+backend/cache/
+backend/uploads/
+backend/src/uploads/
+test_*.zip
+
+# OS Files
+.DS_Store
+Thumbs.db
