@@ -3,10 +3,6 @@ import path from "path";
 import multer from "multer";
 import sharp from "sharp";
 import fs from "fs";
-import ffmpeg from "fluent-ffmpeg";
-import ffmpegInstaller from "@ffmpeg-installer/ffmpeg";
-
-ffmpeg.setFfmpegPath(ffmpegInstaller.path);
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 

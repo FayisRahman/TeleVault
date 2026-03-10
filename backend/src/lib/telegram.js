@@ -116,7 +116,7 @@ async function uploadBigFile(params) {
   const fileSize = stats.size;
   const fileName = file.split("/").pop();
 
-  const CHUNK_SIZE_LIMIT = 2 * 1024 * 1024 * 1024; // 2GB
+  const CHUNK_SIZE_LIMIT = 1000000000; // 1GB
 
   if (fileSize <= CHUNK_SIZE_LIMIT) {
     return await uploadSingleFile(file, fileName, fileSize, message, thumb, progressCallback);

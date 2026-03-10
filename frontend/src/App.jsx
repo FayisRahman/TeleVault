@@ -180,7 +180,7 @@ function App() {
                   </div>
 
                   <div className="card-meta">
-                    <h3>{item.message || 'Telegram Media'}</h3>
+                    <h3>{item.message.split('\\')[item.message.split('\\').length - 1].split('-')[1] || 'Telegram Media'}</h3>
                     {item.isMultipart && (
                       <div style={{
                         fontSize: '10px',
